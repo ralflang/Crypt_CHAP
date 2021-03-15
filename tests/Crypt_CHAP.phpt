@@ -36,12 +36,15 @@ any other GPL-like (LGPL, GPL2) License.
 
     $Id: chaptest.php 231819 2007-03-14 07:39:07Z mbretter $
 */
-chdir (dirname(__FILE__));
-if (file_exists('../CHAP.php')) {
-    require_once '../CHAP.php';
-} else {
-    require_once 'Crypt/CHAP.php';
+chdir (__DIR__);
+/*require_once __DIR__ . '/../lib/Crypt_CHAP.php';
+require_once __DIR__ . '/../lib/Crypt_CHAP_MD5.php';
+require_once __DIR__ . '/../lib/Crypt_CHAP_MSv1.php';
+require_once __DIR__ . '/../lib/Crypt_CHAP_MSv2.php';*/
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    require_once __DIR__ . '/../vendor/autoload.php';
 }
+
 
 echo "CHAP-MD5 TEST\n";
 $crpt = new Crypt_CHAP_MD5;
