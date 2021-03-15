@@ -16,11 +16,9 @@
         "php": "^7 || ^8",
         "pear/pear": ">= 1.4.0b1",
         "phpseclib/mcrypt_compat": "*",
-        "ext-hash": "*",
-        "rector/rector": "^0.9.31",
-        "friendsofphp/php-cs-fixer": "^2.18"
+        "ext-hash": "*"
     },
-    "suggest": {
+    "require-dev": {
         "phpunit/phpunit": "*"
     },
     "autoload": {
