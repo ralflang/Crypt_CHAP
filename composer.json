@@ -1,0 +1,29 @@
+{
+    "name": "pear/crypt_chap",
+    "description": "Library for generating CHAP packets",
+    "type": "library",
+    "homepage": "https://pear.php.net/package/Crypt_CHAP",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Michael Bretterklieber",
+            "email": "michael@bretterklieber.com",
+            "role": "lead"
+        }
+    ],
+    "time": "2021-03-13",
+    "require": {
+        "php": "~5.1.2 || ^7 || ^8",
+        "pear/pear": ">= 1.4.0b1",
+        "phpseclib/mcrypt_compat": "*",
+        "ext-hash": "*"
+    },
+    "suggest": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Cryp_": "."
+        }
+    }
+}
